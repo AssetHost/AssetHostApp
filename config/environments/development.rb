@@ -36,11 +36,11 @@ AssetHostApp::Application.configure do
   config.assets.debug = true
   
   # -- AssetHost configuration -- #
-  config.assethost.server         = "localhost:3000"
+  config.assethost.server         = "assethost.dev"
   config.assethost.flickr_api_key = nil
   config.assethost.path           = ':rails_root/public/images/:id_:fingerprint_:sprint.:extension'
-  config.assethost.trueurl        = 'http://localhost:3000/images/:id_:fingerprint_:sprint.:extension'
-  config.assethost.url            = 'http://localhost:3000/i/:fingerprint/:id-:style.:extension'
+  config.assethost.trueurl        = 'http://assethost.dev/images/:id_:fingerprint_:sprint.:extension'
+  config.assethost.url            = 'http://assethost.dev/i/:fingerprint/:id-:style.:extension'
   config.assethost.brightcove     = nil
   config.assethost.resque_queue   = :assethost
   config.assethost.thumb_size     = "thumb"
