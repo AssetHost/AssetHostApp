@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.3'
 gem 'sqlite3'
 
 gem "devise"
 
-gem "asset_host_core", :git => "git://github.com/SCPR/AssetHost.git"
+#gem "asset_host_core", :git => "git://github.com/AssetHost/AssetHost.git"
+gem "asset_host_core", :path => "/Users/eric/rails/AssetHost"
 
 # We currently include several gems that should be in AssetHostCore, just 
 # because I currently don't understand how to specify custom paths and 
@@ -20,8 +21,8 @@ gem "will_paginate"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   gem "eco"
   gem "less-rails-bootstrap"
@@ -29,7 +30,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
